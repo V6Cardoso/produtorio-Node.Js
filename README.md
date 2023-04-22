@@ -10,7 +10,7 @@
 
 //response
 {
-  "result":9.45
+  "result":22.1
 }
 ```
 

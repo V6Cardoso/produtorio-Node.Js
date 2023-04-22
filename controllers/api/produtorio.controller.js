@@ -10,13 +10,14 @@ function calcRecursive(m, n) {
     if (m == n)
         return m + 1/m;
     
-    return calcRecursive(m + 1, n) + m + 1/m;
+    return calcRecursive(m + 1, n) * (m + 1/m);
 }
 
 function calcIterative(m, n) {
-    let result = 0;
+    let result = 1;
     for (let i = m; i <= n; i++) {
-        result += i + 1/i;
+
+        result *= i + 1/i;
     }
     return result;
 }
